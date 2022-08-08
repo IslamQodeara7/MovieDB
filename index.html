@@ -10,11 +10,14 @@
 </head>
 
 <body>
-    <div class="nav" style="padding: 50px;">
-        <button class="menu" style="margin: auto; display:block; width:50px;
-        height: 50px; border-radius: 50%; background-color: red; color: white;">
+    <div class="nav" style="padding: 50px; width: 100%;">
+       <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="margin-right: auto; color:white;">Movies Hub <i style="margin-left: 10px;" class="fa-solid fa-film"></i></span>
+        <button class="menu" style="margin-right: auto; width:70px;
+        height: 50px; background-color: red; color: white;">
             Menu
         </button>
+       </div>
         <ul style="list-style: none; overflow: hidden; column-gap: 20px;">
             <li style="padding: 10px; border-bottom: 2px solid white;" target = "now_playing" class="pointer targets">Now Playing</li>
             <li style="padding: 10px; border-bottom: 2px solid white;" target = "popular" class="pointer targets">Popular</li>
@@ -42,8 +45,10 @@
         <p>Copyright Â© 2019 All Rights Reserved.</p>
      </div>
      <div class="whiteBar">
-        <div class="shape">
-        </div>
+        <span class="webLogo">
+            Movies Hub <i style="margin-left: 10px;" class="fa-solid fa-film"></i>
+        </span>
+        
         <div>
             <i class="fa-solid fa-bars pointer"></i>
             <i class="fa-solid fa-xmark pointer"></i>
@@ -59,7 +64,6 @@
     </div>
     <div class="container">
         <div class="firstInputs">
-            <input type="text" placeholder="enter your name movie by word...">
             <input type="text" placeholder="search...">
         </div>
 

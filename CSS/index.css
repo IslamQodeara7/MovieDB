@@ -6,7 +6,6 @@
 
 :root {
     --mainColor1: #212529;
-    font-family: "harlow" !important;
 }
 
 body {
@@ -14,8 +13,11 @@ body {
     margin          : 0;
     box-sizing      : border-box;
     background-color: var(--mainColor1);
-
 }
+html{
+    font-family: 'harlow' !important;
+}   
+
 
 .container {
     width  : 80%;
@@ -32,6 +34,9 @@ body {
     justify-content: center;
     align-items    : center;
     flex-wrap      : wrap;
+}
+.contactInputs div{
+    width: 50%;
 }
 
 .contactInputs input {
@@ -243,16 +248,42 @@ color: white;
 .pointer a:hover{
     color: red;
 }
+.nav button{
+    transition: all 1s;
+    font-family: 'harlow' !important;
+}
+.nav button:hover{
+    background-color: white !important;
+    color: red !important;
+}
+.webLogo{
+    transform: rotateZ(90deg);
+}
+input{
+ font-family: 'harlow';   
+}
 
 @media screen and (max-width:1200px) {
-.moviesItem{
-    width: 50%;
-}
  .sideBar{
-    left: 50% !important;
     display: none;
  }   
  .nav{
     display: block;
  }
+}
+
+@media screen and (max-width:980px) and (min-width:768px) {
+    .moviesItem{
+        width: 40%;
+    }
+   
+}
+
+@media screen and (max-width:767px){
+    .moviesItem{
+        width: 100%;
+    }
+    .contactInputs  div{
+     width: 100%;   
+    }
 }
